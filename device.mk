@@ -29,6 +29,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.lineage.powershare-service.default
 
+# GameKeys
+PRODUCT_PACKAGES += \
+    vendor.lineage.gamekeys-service.default \
+    vendor.lineage.touchinjector-service.default \
+    GameKeys
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
