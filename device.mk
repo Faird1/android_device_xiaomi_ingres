@@ -17,10 +17,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/usecaseKvManager.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usecaseKvManager.xml
 
 # Miui Camera for cupid
-$(call inherit-product, device/xiaomi/miuicamera-cupid/device.mk)
+# $(call inherit-product, device/xiaomi/miuicamera-cupid/device.mk)
 
 # Call the gamekey setup (if it exists)
-$(call inherit-product-if-exists, vendor/xiaomi/gamekey/common-vendor.mk)
+# $(call inherit-product-if-exists, vendor/xiaomi/gamekey/common-vendor.mk)
 
 # Overlay
 PRODUCT_PACKAGES += \
@@ -34,6 +34,12 @@ PRODUCT_PACKAGES += \
 # Powershare
 PRODUCT_PACKAGES += \
     vendor.lineage.powershare-service.default
+
+# GameKeys
+PRODUCT_PACKAGES += \
+    vendor.lineage.gamekeys-service.default \
+    vendor.lineage.touchinjector-service.default \
+    GameKeys
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
