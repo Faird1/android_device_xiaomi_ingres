@@ -31,3 +31,10 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/properties/vendor.prop
 
 # Screen density
 TARGET_SCREEN_DENSITY := 395
+
+# Vintf
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
+	$(DEVICE_PATH)/vintf/compatibility_matrix.xml
+
+# SE Policy
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
